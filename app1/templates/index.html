@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+
+                <form class="account-form p-4 rounded" action="." method="post" enctype='multipart/form-data'>
+
+                  {% csrf_token %}
+
+                  <p class="h4 mb-4 font-weight-bold">Upload image</p>
+
+              
+
+                  {{ form }}
+
+                  <button class="btn btn-dark btn-block py-2 mb-4 mt-5 font-weight-bold" type="submit"
+                    value="Log-in">Upload Image</button>
+
+
+                  
+                  <p class="small text-center">By signing in to your account, you agree to Blog <a href="">Terms of
+                      Service</a> and
+                    consent to
+                    our <a href="">Cookie Policy</a> and <a href="">Privacy Policy</a>. This site is not
+                    protected
+                    by reCAPTCHA and
+                    is a demonstration website
+                    for learning purposes only.
+                  </p>
+                </form>
+
+</div>
+
+
+
+
+
+{% endblock %}
